@@ -1,0 +1,12 @@
+
+services:
+  preco_amb:
+    build: .
+    container_name: preco_amb_app
+    ports:
+      - "5001:5000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - FLASK_ENV=production
+    restart: unless-stopped
