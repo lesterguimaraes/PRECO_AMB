@@ -1,6 +1,7 @@
 # Gerador de Inserts PRECO_AMB
 
 Este projeto fornece uma interface web simples para gerar scripts SQL de inserção (`INSERT`) na tabela `PRECO_AMB` a partir de uma planilha Excel (`.xlsx`). Ele trata valores numéricos, formata campos com 4 casas decimais e gera cada insert com `COMMIT;` ao final.
+O objetivo incial é pegar a planilha fornecida pelo plano de saúde que contem o rool de procedimentos e inserir manualmente na tabela `PRECO_AMB` alimentando o sistema tasy com os novos valores dos procedimentos, definindo a vigência mais atual a ser utilizada no sistema para os procedimentos na conta paciente.
 
 ---
 
@@ -34,6 +35,16 @@ Este projeto fornece uma interface web simples para gerar scripts SQL de inserç
 ├─ app.py # Aplicação Flask principal
 ├─ requirements.txt # Dependências Python
 └─ README.md # Documentação
+
+/var/www/html/preco_amb_app
+   app.py # Aplicação Flask principal
+   requirements.txt # Dependências Python
+   README.md # Documentação
+   docker-compose.yml
+   Dockerfile
+   README.md
+   requirements.txt
+   data/ # Diretório que recebe o upload
 
 
 ---
