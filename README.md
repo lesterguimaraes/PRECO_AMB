@@ -52,12 +52,12 @@ O objetivo incial é pegar a planilha fornecida pelo plano de saúde que contem 
 ## Instalação
 
 1. Clone o repositório:
-git clone <url_do_repositorio>
-cd <pasta_do_projeto>
+2. git clone <url_do_repositorio>
+3. cd <pasta_do_projeto>
 
 ## Inicialização do container docker
-cd <pasta_do_projeto>
-docker compose up -d --build
+1. cd <pasta_do_projeto>
+2. docker compose up -d --build
 
 ## Acesso via navegador
 http://endereço-ip:50001
