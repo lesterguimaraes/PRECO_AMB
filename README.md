@@ -41,39 +41,31 @@ Este projeto fornece uma interface web simples para gerar scripts SQL de inserç
 ## Instalação
 
 1. Clone o repositório:
-
-```bash
 git clone <url_do_repositorio>
 cd <pasta_do_projeto>
 
+## Inicialização do container docker
+cd <pasta_do_projeto>
+docker compose up -d --build
 
+## Acesso via navegador
+http://endereço-ip:50001
+
+---
 Estrutura esperada da planilha Excel
-
 A planilha deve conter, no mínimo, as seguintes colunas:
-
 Codigo
-
 Valor Total (HM + CO)
-
 Valor HM
-
 Nº Auxiliares
-
 Porte Anestesico
-
 Valor Porte Anestesico
-
 Valor CO
-
 Valor Filme
-
 Colunas adicionais ausentes serão criadas automaticamente com valor 0.0000.
 
 Observações
-
 Apenas códigos numéricos são processados. Títulos, capítulos ou células de cabeçalho são ignorados.
-
 Cada linha gerada contém o COMMIT; ao final, garantindo que cada insert seja persistido.
-
 Certifique-se de remover planilhas desnecessárias para agilizar o processamento.
 
